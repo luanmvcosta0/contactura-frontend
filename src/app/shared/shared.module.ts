@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DaoService } from './services/dao.service';
+import { AutenticadorService } from './services/autenticador.service';
+import { HttpClient } from '@angular/common/http';
 
 
 @NgModule({
@@ -12,7 +14,8 @@ import { DaoService } from './services/dao.service';
   exports: [
   ],
   providers: [
-    DaoService
+    DaoService,
+    AutenticadorService
   ]
 })
 export class SharedModule { }
