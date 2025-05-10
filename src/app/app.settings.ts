@@ -1,6 +1,6 @@
 export class AppSettings {
     
-    get autenticador() {
+    static get AUTENTICADOR_URL() {
         return "/api/autenticador";
     }
 }

@@ -16,6 +16,6 @@ export class AutenticadorService {
   ) { }
 
   public login(login:IAutenticador) : Observable<HttpResponse<IAutenticador>> {
-    return this.daoService.post<IAutenticador>(this.settings.autenticador, login, DaoService.MEDIA_TYPE_APP_JSON)
+    return this.daoService.post<IAutenticador>(AppSettings.AUTENTICADOR_URL, login, DaoService.MEDIA_TYPE_APP_JSON)
   }
 } 
